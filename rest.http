@@ -1,0 +1,23 @@
+
+### Getting all Todos for a user name
+GET http://localhost:3000/todos?user=user1
+
+### create a new todo for a particular user
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "todo": "from the NodeJS App",
+    "owner": "Harish"
+}
+
+### update a todo using todo id
+PATCH http://localhost:3000/todos/id
+Content-Type: application/json
+
+{
+    "todo": "updated todo"
+}
+
+### delete a todo using id
+DELETE http://localhost:3000/todos/id
